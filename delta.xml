@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@<COPYRIGHT>@
+==================================================
+Copyright 2009.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+==================================================
+@<COPYRIGHT>@
+-->
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="Fri Dec 21 02:56:53 PM 2018">
+<Add>
+   <TcClass className="Ret0DestAndTariffCodeRow" parentClassName="Fnd0TableRow" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" revisabilityOption="Revisable"
+       description="">
+     <TcAttribute attributeName="ret0TariffCode" description="ret0TariffCode is a String which represents the code with which the Retail Product or Material is designated in the selected country. NULL value is not allowed for ret0TariffCode."
+         attributeType="POM_string" maxStringLength="32" isArray="false" followOnExport="false"
+         isNullsAllowed="false" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         initialValue="" lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="ret0Country" description="ret0Country is a String which represents the Name of the Country where the Retail Product or Material is destined. NULL value is not allowed for ret0Country. Teamcenter OOTB Countries LOV will be attached to this Property."
+         attributeType="POM_string" maxStringLength="128" isArray="false" followOnExport="false"
+         isNullsAllowed="false" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         lowerBoundValue="" upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="Ret0ScheduleCodeAndTariff" parentClassName="WorkspaceObject"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="ret0HTSCode" description="HTS Code" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="false"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="ret0HTSDescription" description="ret0HTSDescription"
+         attributeType="POM_string" maxStringLength="2400" isArray="false" followOnExport="false"
+         isNullsAllowed="true" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         lowerBoundValue="" upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="Ret0TariffRow" parentClassName="Fnd0TableRow" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" revisabilityOption="Revisable"
+       description="">
+     <TcAttribute attributeName="ret0DestinationCountry" description="Destination Country"
+         attributeType="POM_string" maxStringLength="128" isArray="false" followOnExport="false"
+         isNullsAllowed="true" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="ret0ManufacturingCountry" description="Manufacturing Country"
+         attributeType="POM_string" maxStringLength="128" isArray="false" followOnExport="false"
+         isNullsAllowed="true" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="ret0DutyPercent" description="Duty Percent" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="ret0UnitOfQuanity" description="ret0UnitOfQuanity"
+         attributeType="POM_typed_reference" maxStringLength="0" isArray="false" followOnExport="false"
+         isNullsAllowed="true" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         typedRefClassName="UnitOfMeasure"/>
+     <TcAttribute attributeName="ret0DutyAbsolute" description="Duty Absolute" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="ret0Description" description="Description" attributeType="POM_string"
+         maxStringLength="240" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="ret0DutyStartDate" description="ret0DutyStartDate"
+         attributeType="POM_date" maxStringLength="0" isArray="false" followOnExport="false"
+         isNullsAllowed="true" isUnique="false" isPublicRead="true" isPublicWrite="true"
+         isCandidateKey="false" isTransient="false" exportAsString="false" noBackpointer="false"
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="ret0DutyEndDate" description="ret0DutyEndDate" attributeType="POM_date"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcStandardType typeName="Ret0DestAndTariffCodeRow" parentTypeName="Fnd0TableRow"
+       typeClassName="Ret0DestAndTariffCodeRow" description="Destination And Tariff Code Row"
+       isAbstract="false" artifactName="Ret0DestAndTariffCodeRow" functionality="Ret0Retail"/>
+   <TcStandardType typeName="Ret0ScheduleCodeAndTariff" parentTypeName="WorkspaceObject"
+       typeClassName="Ret0ScheduleCodeAndTariff" description="Ret0ScheduleCodeAndTariff"
+       isAbstract="false" artifactName="Ret0ScheduleCodeAndTariff" functionality="Ret0Retail"/>
+   <TcPropertyAttach typeName="Ret0ScheduleCodeAndTariff">
+     <TcProperty propName="ret0Tariffs" propTypeName="Table" propValueType="PROP_typed_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="ret0Tariff"
+         referencedTypeConstant="" referencedType="Ret0TariffRow"/>
+   </TcPropertyAttach>
+   <TcStandardType typeName="Ret0TariffRow" parentTypeName="Fnd0TableRow" typeClassName="Ret0TariffRow"
+       description="Tariff Row" isAbstract="false" artifactName="Ret0TariffRow" functionality="Ret0Retail"/>
+   <OperationInputType typeName="Ret0DestAndTariffCodeRowCreI" parentTypeName="Fnd0TableRowCreI"
+       typeClassName="Ret0DestAndTariffCodeRowCreI" description="CreateInput object for &quot;Ret0DestAndTariffCodeRow&quot; business object"
+       isAbstract="false" artifactName="Ret0DestAndTariffCodeRowCreI">
+     <OperationInputProperty propName="ret0TariffCode" compoundObjectConstant="" srcPropName="ret0TariffCode"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="ret0Country" compoundObjectConstant="" srcPropName="ret0Country"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="Ret0DestAndTariffCodeRowSvAI" parentTypeName="Fnd0TableRowSvAI"
+       typeClassName="Ret0DestAndTariffCodeRowSvAI" description="SaveAsInput object for &quot;Ret0DestAndTariffCodeRow&quot; business object"
+       isAbstract="false" artifactName="Ret0DestAndTariffCodeRowSvAI"/>
+   <OperationInputType typeName="Ret0ScheduleCodeAndTariffCreI" parentTypeName="WorkspaceObjectCreI"
+       typeClassName="Ret0ScheduleCodeAndTariffCreI" description="CreateInput object for &quot;Ret0ScheduleCodeAndTariff&quot; business object"
+       isAbstract="false" artifactName="Ret0ScheduleCodeAndTariffCreI">
+     <OperationInputProperty propName="ret0HTSCode" compoundObjectConstant="" srcPropName="ret0HTSCode"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="ret0HTSDescription" compoundObjectConstant=""
+         srcPropName="ret0HTSDescription" compoundObjectType="" fieldType="SimpleProperty"
+         description="ret0HTSDescription"/>
+   </OperationInputType>
+   <OperationInputType typeName="Ret0ScheduleCodeAndTariffSvAI" parentTypeName="WorkspaceObjectSvAI"
+       typeClassName="Ret0ScheduleCodeAndTariffSvAI" description="SaveAsInput object for &quot;Ret0ScheduleCodeAndTariff&quot; business object"
+       isAbstract="false" artifactName="Ret0ScheduleCodeAndTariffSvAI"/>
+   <OperationInputType typeName="Ret0TariffRowCreI" parentTypeName="Fnd0TableRowCreI"
+       typeClassName="Ret0TariffRowCreI" description="CreateInput object for &quot;Ret0TariffRow&quot; business object"
+       isAbstract="false" artifactName="Ret0TariffRowCreI">
+     <OperationInputProperty propName="ret0ManufacturingCountry" compoundObjectConstant=""
+         srcPropName="ret0ManufacturingCountry" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="ret0DutyAbsolute" compoundObjectConstant=""
+         srcPropName="ret0DutyAbsolute" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="ret0DutyPercent" compoundObjectConstant=""
+         srcPropName="ret0DutyPercent" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="ret0DestinationCountry" compoundObjectConstant=""
+         srcPropName="ret0DestinationCountry" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="ret0Description" compoundObjectConstant=""
+         srcPropName="ret0Description" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="ret0UnitOfQuanity" compoundObjectConstant=""
+         srcPropName="ret0UnitOfQuanity" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="Ret0TariffRowSvAI" parentTypeName="Fnd0TableRowSvAI"
+       typeClassName="Ret0TariffRowSvAI" description="SaveAsInput object for &quot;Ret0TariffRow&quot; business object"
+       isAbstract="false" artifactName="Ret0TariffRowSvAI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Ret0DestAndTariffCodeRow"
+       value="Ret0DestAndTariffCodeRowCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Ret0ScheduleCodeAndTariff"
+       value="Ret0ScheduleCodeAndTariffCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Ret0TariffRow" value="Ret0TariffRowCreI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Ret0DestAndTariffCodeRow"
+       value="Ret0DestAndTariffCodeRowSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Ret0ScheduleCodeAndTariff"
+       value="Ret0ScheduleCodeAndTariffSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Ret0TariffRow" value="Ret0TariffRowSvAI"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0DestAndTariffCodeRow"
+       propertyName="ret0Country" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0DestAndTariffCodeRow"
+       propertyName="ret0TariffCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0HTSCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0HTSDescription" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0Tariffs" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0Description"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0DestinationCountry"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0DutyAbsolute"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0DutyEndDate"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0DutyPercent"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0DutyStartDate"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0ManufacturingCountry"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Ret0TariffRow" propertyName="ret0UnitOfQuanity"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="RetailMaterialRevision"
+       propertyName="ret0DestinationTariffCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="RetailProductRevision"
+       propertyName="ret0DestinationTariffCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0DestAndTariffCodeRow"
+       propertyName="ret0Country" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0DestAndTariffCodeRow"
+       propertyName="ret0TariffCode" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0HTSCode" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0HTSDescription" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0Tariffs" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0Description"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0DestinationCountry"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0DutyAbsolute"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0DutyEndDate"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0DutyPercent"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0DutyStartDate"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0ManufacturingCountry"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Ret0TariffRow" propertyName="ret0UnitOfQuanity"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="RetailMaterialRevision"
+       propertyName="ret0DestinationTariffCode" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="RetailProductRevision"
+       propertyName="ret0DestinationTariffCode" value="Write"/>
+   <TcPropertyConstantAttach constantName="Required" typeName="Ret0DestAndTariffCodeRow"
+       propertyName="ret0Country" value="true"/>
+   <TcPropertyConstantAttach constantName="Required" typeName="Ret0DestAndTariffCodeRowCreI"
+       propertyName="ret0TariffCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Required" typeName="Ret0ScheduleCodeAndTariff"
+       propertyName="ret0HTSCode" value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="Ret0ScheduleCodeAndTariffCreI"
+       propertyName="object_desc" value="false"/>
+   <BusinessObjectInterface name="Ret0DestAndTariffCodeRow" namespace="Teamcenter::Retail"
+       libraryName="retail" createRelease="tc11000.2.3" typeName="Ret0DestAndTariffCodeRow"
+       primaryInterface="true" description="Interface Name for Business Object Ret0DestAndTariffCodeRow"/>
+   <BusinessObjectInterface name="Ret0ScheduleCodeAndTariff" namespace="Teamcenter::Retail"
+       libraryName="retail" createRelease="tc11000.2.3" typeName="Ret0ScheduleCodeAndTariff"
+       primaryInterface="true" description="Interface Name for Business Object Ret0ScheduleCodeAndTariff"/>
+   <BusinessObjectInterface name="Ret0TariffRow" namespace="Teamcenter::Retail" libraryName="retail"
+       createRelease="tc11000.2.3" typeName="Ret0TariffRow" primaryInterface="true"
+       description="Interface Name for Business Object Ret0TariffRow"/>
+   <OperationTemplate id="int#Teamcenter::Retail::Ret0ScheduleCodeAndTariff::ret0CheckAndUpdateTariffRows#tag_t"
+       name="Teamcenter::Retail::Ret0ScheduleCodeAndTariff::ret0CheckAndUpdateTariffRows"
+       returnConst="false" createRelease="tc11000.2.3" description="" const="false"
+       static="false" returnFreeMemory="false" returnDescription="">
+     <OperationReturnDataTypeRef dataType="int" qualifier=""/>
+     <OperationParameter name="tariffRow" description="" const="false" inputOutput="Input"
+         freeOutputMemory="false" defaultValue="">
+       <OperationParameterDataTypeRef dataType="tag_t" qualifier=""/>
+     </OperationParameter>
+   </OperationTemplate>
+   <OperationAttach typeName="Ret0DestAndTariffCodeRow" id="fnd0Delete#"/>
+   <OperationAttach typeName="Ret0ScheduleCodeAndTariff" id="fnd0Save#std::vector&lt;Teamcenter::BulkInput&gt;,*,*$Teamcenter::BulkData,*"/>
+   <Operation id="ret0CheckAndUpdateTariffRows#tag_t" name="ret0CheckAndUpdateTariffRows"
+       createRelease="tc11000.2.3" description="" opTemplate="int#Teamcenter::Retail::Ret0ScheduleCodeAndTariff::ret0CheckAndUpdateTariffRows#tag_t"
+       interface="Teamcenter::Retail::Ret0ScheduleCodeAndTariff" isPublished="false"
+       canOverride="false" isPreActionAllowed="false" isPostActionAllowed="false"
+       isPreConditionAllowed="false" returnDescription="" component="" useCase=""
+       dependencies="" exceptionCondition="">
+     <ParameterInfo parameterName="tariffRow" description=""/>
+   </Operation>
+   <PropertyOperation id="setRet0DutyEndDate#const,date_t,&amp;$bool" name="setRet0DutyEndDate"
+       createRelease="tc11000.2.3" description="" propertyName="ret0DutyEndDate" operationType="Setter"
+       opTemplate="int#set#const,date_t,&amp;$bool" interface="Teamcenter::Retail::Ret0TariffRow"
+       isPublished="true" canOverride="true" isPreActionAllowed="true" isPostActionAllowed="false"
+       isPreConditionAllowed="false" returnDescription=""/>
+   <PropertyOperation id="setRet0DutyStartDate#const,date_t,&amp;$bool" name="setRet0DutyStartDate"
+       createRelease="tc11000.2.3" description="" propertyName="ret0DutyStartDate"
+       operationType="Setter" opTemplate="int#set#const,date_t,&amp;$bool" interface="Teamcenter::Retail::Ret0TariffRow"
+       isPublished="true" canOverride="true" isPreActionAllowed="true" isPostActionAllowed="false"
+       isPreConditionAllowed="false" returnDescription=""/>
+   <TcOperationAttach operationName="PROP_set_value_date" extendableElementName="Ret0TariffRow"
+       extendableElementType="Type" propertyName="ret0DutyEndDate" description="">
+     <TcExtensionPoint extensionPointType="PreAction" isOverridable="true"/>
+   </TcOperationAttach>
+   <TcOperationAttach operationName="PROP_set_value_date" extendableElementName="Ret0TariffRow"
+       extendableElementType="Type" propertyName="ret0DutyStartDate" description="">
+     <TcExtensionPoint extensionPointType="PreAction" isOverridable="true"/>
+   </TcOperationAttach>
+   <TcExtension name="Ret0RetailModifyDutyEndDate" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libretail" description="">
+     <TcExtensionValidity parameter="PROPERTY:Ret0TariffRow:ret0DutyEndDate:PROP_set_value_date:2"/>
+   </TcExtension>
+   <TcExtension name="Ret0RetailModifyDutyStartDate" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libretail" description="">
+     <TcExtensionValidity parameter="PROPERTY:Ret0TariffRow:ret0DutyStartDate:PROP_set_value_date:2"/>
+   </TcExtension>
+   <TcExtensionAttach extensionName="Ret0RetailModifyDutyEndDate" operationName="PROP_set_value_date"
+       isActive="true" propertyName="ret0DutyEndDate" extendableElementName="Ret0TariffRow"
+       extendableElementType="Type" extensionPointType="PreAction" conditionName="isTrue"
+       description=""/>
+   <TcExtensionAttach extensionName="Ret0RetailModifyDutyStartDate" operationName="PROP_set_value_date"
+       isActive="true" propertyName="ret0DutyStartDate" extendableElementName="Ret0TariffRow"
+       extendableElementType="Type" extensionPointType="PreAction" conditionName="isTrue"
+       description=""/>
+   <TcLOVAttach lovName="Countries" typeName="Ret0DestAndTariffCodeRow">
+     <TcLOVAttachPropertyInfo valuePropertyName="ret0Country" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcPropertyAttach typeName="RetailMaterialRevision">
+     <TcProperty propName="ret0DestinationTariffCode" propTypeName="Table" propValueType="PROP_typed_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="ret0DestinationTariffCode is a Table property which represents the Destination country and the Schedule Tariff code by which the Retail Material is designated in the selected country. ret0DestinationTariffCode encapsulates the information of the Tariff code which is used for levying import tax on the Material in the selected Country. NULL value is allowed for ret0DestinationTariffCode."
+         referencedTypeConstant="" referencedType="Ret0DestAndTariffCodeRow"/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="RetailProductRevision">
+     <TcProperty propName="ret0DestinationTariffCode" propTypeName="Table" propValueType="PROP_typed_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="ret0DestinationTariffCode is a Table property which represents the Destination country and the Schedule Tariff code by which the Retail Product is designated in the selected country. ret0DestinationTariffCode encapsulates the information of the Tariff code which is used for levying import tax on the Product in the selected Country. NULL value is allowed for ret0DestinationTariffCode."
+         referencedTypeConstant="" referencedType="Ret0DestAndTariffCodeRow"/>
+   </TcPropertyAttach>
+</Add>
+</TcBusinessData>
