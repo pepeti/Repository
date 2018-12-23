@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@<COPYRIGHT>@
+==================================================
+Copyright 2009.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+==================================================
+@<COPYRIGHT>@
+-->
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="Fri Dec 21 02:56:54 PM 2018">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}Ret0DestAndTariffCodeRow" status="Approved">Destination And Tariff Code Row</key>
+   <key locale="en_US" id="BusinessObject{::}Ret0ScheduleCodeAndTariff" status="Approved">Schedule Code And Tariff</key>
+   <key locale="en_US" id="BusinessObject{::}Ret0TariffRow" status="Approved">Tariff Row</key>
+   <key locale="en_US" id="Property{::}Ret0DestAndTariffCodeRow{::}ret0Country" status="Approved">Country</key>
+   <key locale="en_US" id="Property{::}Ret0DestAndTariffCodeRow{::}ret0TariffCode"
+       status="Approved">Schedule Tariff Code</key>
+   <key locale="en_US" id="Property{::}Ret0ScheduleCodeAndTariff{::}ret0HTSCode" status="Approved">HTS Code</key>
+   <key locale="en_US" id="Property{::}Ret0ScheduleCodeAndTariff{::}ret0HTSDescription"
+       status="Approved">HTS Description</key>
+   <key locale="en_US" id="Property{::}Ret0ScheduleCodeAndTariff{::}ret0Tariffs" status="Approved">Tariffs</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0Description" status="Approved">Description</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0DestinationCountry" status="Approved">Destination Country</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0DutyAbsolute" status="Approved">Duty Absolute</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0DutyEndDate" status="Approved">Duty End Date</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0DutyPercent" status="Approved">Duty Percent</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0DutyStartDate" status="Approved">Duty Start Date</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0ManufacturingCountry"
+       status="Approved">Manufacturing Country</key>
+   <key locale="en_US" id="Property{::}Ret0TariffRow{::}ret0UnitOfQuanity" status="Approved">Unit Of Quanity</key>
+   <key locale="en_US" id="Property{::}RetailMaterialRevision{::}ret0DestinationTariffCode"
+       status="Approved">Destination And Tariff Code</key>
+   <key locale="en_US" id="Property{::}RetailProductRevision{::}ret0DestinationTariffCode"
+       status="Approved">Destination And Tariff Code</key>
+</Add>
+</TcBusinessDataLocalization>
